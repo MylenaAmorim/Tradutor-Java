@@ -68,15 +68,14 @@ public class dicionario {
 		if(pa.compareToIgnoreCase(dic[meio][1])==0){ //se a palavra procurada for igual a palavra que está no índice central
 			p = dic[meio][0]; //retorne a palavra em português
 		}
-		
-			else if(pa.charAt(0) > dic[meio][1].charAt(0)) { //se a primeira letra for maior que a letra do índice meio, faça.
-				for (int i = meio; i < tam; i++){ //i recebe o índice do meio, e enquanto ele for maior que o tamanho, faça.
-					//comparar a palavra do índice i a palavra digitada.
-					if(dic[i][1].compareToIgnoreCase(pa) == 0) { //Compara duas strings, ignorando as diferenças entre maiúsculas e minúsculas.
+		else if(pa.charAt(0) > dic[meio][1].charAt(0)) { //se a primeira letra for maior que a letra do índice meio, faça.
+			for (int i = meio; i < tam; i++){ //i recebe o índice do meio, e enquanto ele for maior que o tamanho, faça.
+				//comparar a palavra do índice i a palavra digitada.
+				if(dic[i][1].compareToIgnoreCase(pa) == 0) { //Compara duas strings, ignorando as diferenças entre maiúsculas e minúsculas.
 					p = dic[i][0];
 					}
 				}
-			}
+		}
 		else {
 			for (int i = 0; i < meio; i++){ //enquanto o i for menor que o meio, faça.
 				if(dic[i][1].compareTo(pa) == 0) {
@@ -93,7 +92,6 @@ public class dicionario {
 		 if(pa.compareTo(dic[meio][0])==0){
 			p = dic[meio][1];
 		 }
-		
 		if(pa.charAt(0) > dic[meio][0].charAt(0)) {
 			for (int i = meio; i < dic.length; i++){
 				if(dic[i][0].compareTo(pa) == 0) {
@@ -101,7 +99,6 @@ public class dicionario {
 				}
 			}
 		}
-			 
 		else {
 			for (int i = 0; i < meio; i++){
 				if(dic[i][0].compareTo(pa) == 0) {
@@ -110,11 +107,11 @@ public class dicionario {
 			}	
 		}	 
 	}
+		
 	else { //se a palavra não for encontrada
 		System.out.println("opção inválida");
 	}
 		return "Traduçaõ: " + pa + " -> " + p; 
-
 }
 	
 	public static void main(String[] args) { 
