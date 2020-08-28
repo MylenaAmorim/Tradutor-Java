@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class dicionario {
+public class tradutor {
 	
 	public static String[][] ordemI(String dic[][]){ //percorrer os elementos do dicionário, para fazer uma organização alfabética das palavras inglesas.
 		
