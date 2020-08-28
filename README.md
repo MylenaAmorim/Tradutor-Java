@@ -28,7 +28,8 @@ public static String[][] ordemI(String dic[][]){ //percorrer os elementos do dic
   A busca binária é um eficiente algoritmo para encontrar um item em uma lista ordenada de itens. Ela funciona dividindo repetidamente pela metade a porção da lista que deve conter o item, até reduzir as localizações possíveis a apenas uma.
 E também é um dos modos mais comuns de se usar a busca binária é para encontrar um item em um array.
 ### Exemplo:
-if(pa.compareToIgnoreCase(dic[meio][1])==0){ //se a palavra procurada for igual a palavra que está no índice central
+
+		if(pa.compareToIgnoreCase(dic[meio][1])==0){ //se a palavra procurada for igual a palavra que está no índice central
 			p = dic[meio][0]; //retorne a palavra em português
 		}
 		else if(pa.charAt(0) > dic[meio][1].charAt(0)) { //se a primeira letra for maior que a letra do índice meio, faça.
