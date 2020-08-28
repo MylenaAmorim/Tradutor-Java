@@ -1,5 +1,5 @@
 # Tradutor-Java
-## Estruturas de algoritmicos utilizadas:
+## Estruturas de algorítmicos utilizadas:
 ##### • Bubble Sort
 ##### • Busca Binária
 ## O que são algoritmos de ordenação Bubble Sort?
